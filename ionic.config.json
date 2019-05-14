@@ -1,0 +1,7 @@
+{
+  "name": "DayWork",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

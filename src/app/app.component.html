@@ -1,0 +1,60 @@
+<ion-app>
+	<ion-menu side="start" menuId="menu">
+		<ion-header>
+    		<ion-toolbar color="{{pageColor}}">
+      			<ion-title>Menu</ion-title>
+    		</ion-toolbar>
+  		</ion-header>
+		<ion-content>
+		  <ion-avatar>
+            <img src="/assets/img/Usuario.jpg">
+          </ion-avatar>
+          <div class="usuario">
+            <ion-card-title>Josh Gomes</ion-card-title>
+            <ion-card-subtitle>Professor(a)</ion-card-subtitle>
+          </div>
+          <ion-list>
+	          <ion-item lines="none" (click)="goInicio()" button>
+	            <ion-icon name="home" slot="start"></ion-icon>
+	            Início
+	          </ion-item>
+	          
+	          <ion-item lines="none" (click)="goAjuda()" button>
+	            <ion-icon name="help-circle" slot="start"></ion-icon>
+	            Ajuda
+	          </ion-item>
+	          
+	          <ion-item lines="none" (click)="goConfig()" button>
+	            <ion-icon name="settings" slot="start"></ion-icon>
+	            Configurações
+	          </ion-item>
+
+	          <ion-item lines="none" (click)="goSE()" button>
+	            <ion-icon name="paper" slot="start"></ion-icon>
+	            Seus anuncios
+	          </ion-item>
+	          
+	          <ion-item lines="none" (click)="goTS()" button>
+	            <ion-icon name="briefcase" slot="start"></ion-icon>
+	            Tornar-se um servidor
+	          </ion-item>
+	          
+	          <ion-item lines="none" (click)="goContatos()" button>
+	            <ion-icon name="at" slot="start"></ion-icon>
+	            Entre em contato
+	          </ion-item>
+	          
+	          <ion-item lines="none" (click)="goLogin()" button>
+	            <ion-icon name="hand" slot="start"></ion-icon>
+	            Sair
+	          </ion-item>
+        	</ion-list>
+	      	
+      	</ion-content>
+      	<ion-item lines="none" class="center">
+	  		<ion-icon name="logo-ionic" size="large"></ion-icon>
+	  		<ion-label>Matheus Cassiano</ion-label>
+		</ion-item>
+	</ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
+</ion-app>

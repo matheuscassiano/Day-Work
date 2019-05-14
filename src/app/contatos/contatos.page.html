@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="{{pageColor}}">
+  	<ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Contatos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-icon size="large" name="logo-facebook" color="primary"></ion-icon>
+	<ion-icon size="large" name="logo-twitter" color="primary"></ion-icon>
+	<ion-icon size="large" name="logo-whatsapp" color="success"></ion-icon>
+	<ion-icon size="large" name="logo-instagram" color="tertiary"></ion-icon>
+	<ion-icon size="large" name="logo-googleplus" color="danger"></ion-icon>
+	<form>
+		<ion-item>
+			<ion-label>Seu e-mail: </ion-label>
+			<ion-input type="text" placeholder="nome@email.com" name="email" [(ngModel)]="email"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Titulo: </ion-label>
+			<ion-input type="text" placeholder="Tenho uma duvida" name="titulo" [(ngModel)]="titulo"></ion-input>
+		</ion-item>
+		<ion-item lines="none">
+			<ion-label class="labelTextArea">Mensagem: </ion-label>
+		</ion-item>
+		<ion-item>
+			<ion-textarea type="text" rows="8" placeholder="Sua mensagem..." name="mensagem" [(ngModel)]="mensagem"></ion-textarea>
+		</ion-item>
+	</form>
+</ion-content>
+<div padding>
+	<ion-button class="ion-float-left" color="success">Enviar</ion-button>
+	<ion-button class="ion-float-right" type="reset" color="danger" (click)="limpar()">Deletar</ion-button>
+</div>

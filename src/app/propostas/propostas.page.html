@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="{{pageColor}}">
+  	<ion-buttons slot="start">
+  		<ion-menu-button></ion-menu-button>
+  	</ion-buttons>
+    <ion-title>Propostas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-card>
+		<ion-card-header>
+			<ion-card-subtitle>
+				UFAL
+			</ion-card-subtitle>
+			<ion-card-title>
+				Anna Santos
+			</ion-card-title>
+		</ion-card-header>
+
+		<ion-card-content class="ion-text-justify">
+			Anna Santos, faculdade de matemática (UFAL).
+			<div>
+				<ion-button color="success" class="ion-float-left" (click)="goChat()">
+					Confirmar
+				</ion-button>
+				<ion-button color="danger" class="ion-float-right">
+					Rejeitar
+				</ion-button>
+			</div>
+		</ion-card-content>
+	</ion-card>
+</ion-content>

@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar color="{{pageColor}}">
+  	<ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Configurações</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="center">
+          <ion-avatar>
+            <img src="/assets/img/Usuario.jpg">
+          </ion-avatar>
+          <ion-card-title>Josh Gomes</ion-card-title>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div>
+    <ion-item class="ion-margin-top">
+      <ion-label>Nome:</ion-label>
+      <div class="input">
+      <ion-input type="text" placeholder="Josh Gomes" value="Josh Gomes"></ion-input>
+    </div>
+    </ion-item>
+
+    <ion-item class="ion-margin-top">
+      <ion-label>E-mail:</ion-label>
+      <div class="input">
+        <ion-input type="email" placeholder="nome@email.com" value="joshgomes@gmail.com"></ion-input>
+      </div>
+    </ion-item>
+    
+    <ion-item class="ion-margin-top">
+      <ion-label>Telefone:</ion-label>
+    <div class="input">
+      <ion-input type="tel" placeholder="82988789635" value="82988789635"></ion-input>
+      </div>
+    </ion-item>
+    
+    <ion-item class="ion-margin-top">
+      <ion-label>Senha:</ion-label>
+      <div class="input">
+        <ion-input type="password" placeholder="********" value="********"></ion-input>
+      </div>
+      </ion-item>
+  </div>
+
+  <ion-item class="ion-margin-top">
+    <ion-label>Sexo:</ion-label>
+    <ion-select [(ngModel)]="sexo" name="sexo" placeholder="Selecione" value="Masculino">
+      <ion-select-option>Masculino</ion-select-option>
+      <ion-select-option>Feminino</ion-select-option>
+      <ion-select-option>Outro</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-item class="ion-margin-top">
+    <ion-label>Sua especialidade:</ion-label>
+    <ion-select [(ngModel)]="cargo" name="cargo" placeholder="Selecione" value="Professor">
+      <ion-select-option>Professor</ion-select-option>
+      <ion-select-option>Programador</ion-select-option>
+      <ion-select-option>Administrador</ion-select-option>
+      <ion-select-option>Engenheiro</ion-select-option>
+      <ion-select-option>Outro...</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item class="ion-margin-top">
+    <ion-label>Cores:</ion-label>
+    <ion-select [(ngModel)]="cor" name="cor" placeholder="Cor">
+      <ion-select-option>Vermelho</ion-select-option>
+      <ion-select-option>Preto</ion-select-option>
+      <ion-select-option>Amarelo</ion-select-option>
+      <ion-select-option>Roxo</ion-select-option>
+      <ion-select-option>Azul</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+</ion-content>
+<ion-footer>
+  <ion-button (click)="myColor(cor)" color="success" class="ion-margin-bottom" expand="block" padding>Salvar</ion-button>
+</ion-footer>

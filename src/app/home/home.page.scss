@@ -1,0 +1,17 @@
+.center{
+	height: 100%;
+	margin: -30px;
+
+	ion-row{
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+
+		ion-item{
+
+			ion-button{
+				width: 100%;
+			}
+		}
+	}
+}
